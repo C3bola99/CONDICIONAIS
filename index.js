@@ -1,70 +1,100 @@
+//let i = 0
+//while (i<10) {
+//console.log(i)
+//i++
+//}
+//
 
-let jogador = {
-    nome: "",
-    classe: "",
-    hp: 10,
-    forca: 0,
-    def: 0,
-    mag: 0,
-    des: 0,
-    inventario: [],
+/*let num = null
+let soma = 0
+
+while (num !== 0) {
+soma = soma + num*/
+//num = Number(prompt("digite um numero:"))
+//}
+//console.log(soma)
+
+
+
+//
+
+
+//for(let i=0; i<10;        i++){
+//console.log(i)
+
+//}
+/*
+let array = [15,24,64,10,7]
+function maiorNumero(vetor){
+    let maior;
+    for (let i=0;i<vetor.lenght; i++){
+
+        if(i===0){
+            maior =vetor[i]
+        }
+        if(maior<vetor[i]){
+            maior=vetor[i]
+        }
+        }
+        return maior
+    }
+    maior = maiorNumero(array)
+    console.log(maior)
+
+    */
+   
+/*
+    const arrayDePalavras = ["oi", "sumido", "tudo", "bem?"];
+
+    function imprimirPalavras(array) {
+      console.log(array.join(" "));
+    }
+    
+    imprimirPalavras(arrayDePalavras);
+  */
+
+
+
+
+//Exercícios de interpretação e prática
+//A)
+/*
+    let valor = 0
+for(let i = 0; i < 5; i++) {
+  valor += i
+}
+console.log(valor)
+
+//será somados os valores individuais de 0 a 4, portanto... 0+1+2+3+4= 10
+//resposta final: o valor retornado será 10
+
+//B)
+
+const lista = [10, 11, 12, 15, 18, 19, 21, 23, 25, 27, 30]
+for (let numero of lista) {
+  if (numero > 18) {
+		console.log(numero)
+	}
+}
+
+//Será retornado todos os valores maiores que 18, portanto retornará (19,21,23,25,27,30)
+//Não seria possivel acessar o índice, for...of é projetado para acessar os elementos.
+*/
+//Exercícios práticos
+//A)
+
+const quantidadeBichinhos = Number(prompt("Quantos bichinhos de estimação você tem?"));
+const nomesBichinhos = [];
+
+if (quantidadeBichinhos > 0) {
+  for (let i = 1; i <= quantidadeBichinhos; i++) {
+    nomesBichinhos.push(prompt(`Digite o nome do bichinho de estimação ${i}:`));
+  }
+
+  console.log("Nomes dos bichinhos de estimação:", nomesBichinhos);
+} else {
+  console.log("Que pena! Você pode adotar um pet!");
 }
 
 
-console.log("===Bem vindo(a)=====\nVamos criar seu personagem.")
-
-
-jogador.nome = prompt("Primeiro, qual seu nome?")
-
-
-console.log("Agora, vamos escolher a sua classe.\n[1] Mago:\n[2] Arqueiro\n[3] Guerreiro\n[4] Bardo")
-
-
-let esc = prompt("Digite o número da classe escolhida:")
-switch(esc){
-    case 1:
-        jogador.classe = "Mago"
-        jogador.hp = jogador.hp+10
-        jogador.forca = jogador.forca+5
-        jogador.def = jogador.def+7
-        jogador.mag = jogador.mag+20
-        jogador.des = jogador.des+3
-        jogador.inventario = ["varinha", "chapéu de mago", "livro"]
-        break
-    case 2:
-        jogador.classe = "Arqueiro"
-        jogador.hp = jogador.hp+12
-        jogador.forca = jogador.forca+8
-        jogador.def = jogador.def+8
-        jogador.mag = jogador.mag+5
-        jogador.des = jogador.des+20
-        jogador.inventario = ["arco", "aljava", "chapéu de arqueiro"]
-        break
-    case 3:
-        jogador.classe = "Guerreiro"
-        jogador.hp = jogador.hp+20
-        jogador.forca = jogador.forca+15
-        jogador.def = jogador.def+10
-        jogador.mag = jogador.mag+0
-        jogador.des = jogador.des+2
-        jogador.inventario = ["espada", "escudo", "chapéu de guerreiro"]
-        break
-    case 4:
-        jogador.classe = "Bardo"
-        jogador.hp = jogador.hp+15
-        jogador.forca = jogador.forca+5
-        jogador.def = jogador.def+10
-        jogador.mag = jogador.mag+16
-        jogador.des = jogador.des+8
-        jogador.inventario = ["flauta", "gaita", "chapéu de bardo", "alaude", "triângulo", "ratos"]
-        break
-    default:
-        console.log("Indigente")
-        jogador.classe =
-        jogador.hp =
-        jogador.forca =
-        jogador.def =
-        jogador.mag =
-        jogador.inventario = []
-}
-
+//B)
